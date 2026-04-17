@@ -134,7 +134,7 @@ export function HasilView({ judul, hasil, versiNum, penulis, savedAt, isLatest, 
         <div className="formula-title">Ringkasan Rumus</div>
         <div className="formula-line">
           HKT = {p.hari_kerja||261} − ({p.cuti||0}+{p.libur||0}+{p.pelatihan||0}+{p.absen||0}) = <strong>{h.wkt.hkt} hari</strong><br/>
-          WKT = {h.wkt.hkt} × {p.jam_kerja||8} jam × {p.efektivitas||80}% = <strong>{fmt(h.wkt.wkt_jam)} jam</strong> = <strong>{fmt(h.wkt.wkt_menit)} menit/tahun</strong><br/>
+          WKT = {h.wkt.hkt} × {p.jam_kerja||8} jam × {p.efektivitas||70}% = <strong>{fmt(h.wkt.wkt_jam)} jam</strong> = <strong>{fmt(h.wkt.wkt_menit)} menit/tahun</strong><br/>
           SBK = WKT ÷ norma waktu &nbsp;|&nbsp; Kebutuhan = capaian ÷ SBK<br/>
           JKT = Σ kebutuhan seluruh tugas pokok = <strong>{h.jkt}</strong><br/>
           FTP per kegiatan = (waktu × HKT) ÷ WKT × 100 → Total FTP = <strong>{h.ftp_total}%</strong><br/>
